@@ -1,8 +1,7 @@
-import { useState } from "react";
-import { Layout } from "@components/index";
+import Layout from "../layouts/Layout";
 
-const Index = () => {
+const Home = () => {
   return <Layout>Test</Layout>;
 };
 
-export default Index;
+export default Home;

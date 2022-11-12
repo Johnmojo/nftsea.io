@@ -4,7 +4,7 @@ name: nftsea-io
 services:
   server:
     build: ./server
-    container_name: nftsea_server
+    container_name: nftsea-server
     env_file:
       - .env
     ports:
@@ -12,7 +12,7 @@ services:
       
   client:
     build: ./client
-    container_name: nftsea_client
+    container_name: nftsea-client
     env_file:
       - .env
     ports:
