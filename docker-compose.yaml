@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  server:
+    build: ./server
+    container_name: nftsea_server
+    env_file:
+      - .env
+    ports:
+      - "4000:4000"
+  client:
+    build: ./client
+    container_name: nftsea_client
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
