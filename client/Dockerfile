@@ -1,12 +1,12 @@
 FROM node:lts-alpine
 
+ENV HOST=0.0.0.0
+
 WORKDIR /client
 
-COPY package.json .
+COPY . ./
 
 RUN npm install
-
-COPY . .
 
 EXPOSE 3000
 
