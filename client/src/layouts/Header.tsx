@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Button from "../components/button";
+import Button from "../components/ui/buttons/Button";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="z-50 hidden w-full px-24 pt-8 pb-8 transition-all duration-300 ease-out lg:block">
+      <div className="z-50 hidden w-full px-24 pt-8 pb-8 transition-all duration-300 ease-out md:block">
         <div className="flex items-center justify-between mx-auto max-w-screen-xl">
           <Link to="/">
             <div
@@ -50,14 +50,14 @@ const Header = () => {
               </li>
               <li className="inline-block">
                 <Link to="/">
-                  <Button title="Connect Wallet" />
+                  <Button title="Connect Wallet" href="" />
                 </Link>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-      <div className="z-50 block w-full px-4 md:px-8 pt-8 pb-8 transition-all duration-300 ease-out lg:hidden ">
+      <div className="z-50 block w-full px-4 sm:px-8 pt-8 pb-8 transition-all duration-300 ease-out md:hidden ">
         <div className="flex items-center justify-between mx-auto max-w-screen-3xl">
           <div className="z-50 flex cursor-pointer">
             <Link to="/">
