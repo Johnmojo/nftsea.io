@@ -75,28 +75,28 @@ const Header = () => {
               aria-haspopup="menu"
               aria-expanded={menu ? "true" : "false"}
               title={menu ? "Close main menu" : "Open main menu"}
-              className="flex flex-col items-center justify-center w-12 h-12 space-y-1.5"
+              className="flex flex-col items-center justify-center w-14 h-14 space-y-1 bg-grey-900 rounded-full hover:bg-purple-500"
               onClick={() => setMenu(!menu)}
             >
               <span
-                className={`h-[0.25rem] w-8 bg-swipey-blue transition-all duration-300 ease-in-out rounded-md ${
+                className={`h-[0.125rem] w-5 transition-all duration-300 ease-in-out rounded-md bg-white ${
                   menu && "translate-y-[7px] -rotate-45"
                 }`}
               ></span>
               <span
-                className={`h-[0.25rem] w-8 bg-swipey-blue transition-all duration-300 ease-in-out rounded-md ${
+                className={`h-[0.125rem] w-5 transition-all duration-300 ease-in-out rounded-md bg-white ${
                   menu && "opacity-0"
                 }`}
               ></span>
               <span
-                className={`h-[0.25rem] w-8 bg-swipey-blue transition-all duration-300 ease-in-out rounded-md ${
-                  menu && "-translate-y-[12px] rotate-45"
+                className={`h-[0.125rem] w-5 transition-all duration-300 ease-in-out rounded-md bg-white ${
+                  menu && "-translate-y-[5px] rotate-45"
                 }`}
               ></span>
             </button>
           </div>
           <div
-            className={`fixed z-10 top-0 -right-full flex flex-col transition-all duration-500 justify-between h-full bg-swipey-white mt-auto bottom-0 ease-in-out ${
+            className={`fixed z-10 top-0 -right-full flex flex-col justify-between h-full mt-auto bottom-0 bg-white ${
               menu && "!w-full right-0 left-0"
             }`}
           >
@@ -104,40 +104,31 @@ const Header = () => {
               <nav>
                 <ul className="flex flex-col m-8 space-y-8 font-sans text-2xl font-medium text-swipey-blue">
                   <li
-                    className={`mr-auto underline-offset-8 ${
-                      menu && "animate-[menu_0.5s_ease-in-out] duration-100"
-                    }`}
+                    className="mr-auto underline-offset-8"
                     onClick={() => setMenu(!menu)}
                   >
                     <Link to="/">Home</Link>
                   </li>
                   <li
-                    className={`mr-auto underline-offset-8 ${
-                      menu && "animate-[menu_0.75s_ease-in-out] duration-200"
-                    }`}
+                    className="mr-auto underline-offset-8"
                     onClick={() => setMenu(!menu)}
                   >
                     <Link to="/">Explore</Link>
                   </li>
                   <li
-                    className={`mr-auto underline-offset-8 ${
-                      menu && "animate-[menu_1s_ease-in-out] duration-300"
-                    }`}
+                    className="mr-auto underline-offset-8"
                     onClick={() => setMenu(!menu)}
                   >
                     <Link to="/">Marketplace</Link>
                   </li>
                   <li
-                    className={`mr-auto underline-offset-8 ${
-                      menu && "animate-[menu_1s_ease-in-out] duration-400"
-                    }`}
+                    className="mr-auto underline-offset-8"
                     onClick={() => setMenu(!menu)}
                   >
                     <Link to="/">Community</Link>
                   </li>
                 </ul>
               </nav>
-              <div className="m-8">Button here</div>
             </div>
           </div>
         </div>
