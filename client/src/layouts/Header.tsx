@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="z-50 hidden w-full px-24 pt-8 pb-8 transition-all duration-300 ease-out md:block">
+      <div className="z-50 hidden w-full px-8 xl:px-24 pt-8 pb-8 transition-all duration-300 ease-out md:block">
         <div className="flex items-center justify-between mx-auto max-w-screen-xl">
           <Link to="/">
             <div
@@ -35,7 +35,7 @@ const Header = () => {
             </div>
           </Link>
           <nav>
-            <ul className="space-x-12 text-base font-medium text-grey-300">
+            <ul className="space-x-8 xl:space-x-12 text-base font-medium text-grey-300">
               <li className="inline-block text-grey-500">
                 <Link to="/">Home</Link>
               </li>
