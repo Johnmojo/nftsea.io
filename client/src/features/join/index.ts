@@ -1,3 +1,1 @@
-const index = () => {};
-
-export default index;
+export * from "./Community";
