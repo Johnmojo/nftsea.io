@@ -9,8 +9,9 @@ const Home = () => {
         title="NFTSea - Home"
         description="NFTSea.io is a platform  where you can sell, buy or share digital art. On NFTSea you can find, collect and trade your digital artwork."
       />
-      <Container>Home Section</Container>
-      <Card />
+      <Container>
+        <Card />
+      </Container>
     </>
   );
 };

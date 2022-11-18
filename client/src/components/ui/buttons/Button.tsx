@@ -1,30 +1,24 @@
-import { useState } from "react";
-
 interface Props {
   title: string;
-  href?: string;
+  href?: string /* If there are a link, show arrow */;
 }
 
 const Button = ({ title, href }: Props) => {
-  const [arrow, setArrow] = useState(false);
-
   return (
-    <button className="flex w-full px-6 py-4 max-h-14 mx-auto justify-center text-base font-medium rounded-full bg-grey-900 text-white space-x-2">
-      <div>{title}</div>
+    <button className="flex items-center w-full group hover:bg-purple-500 bg-grey-900 px-6 py-2 md:py-4 max-h-14 mx-auto justify-center rounded-full space-x-2">
+      <div className="font-medium text-xs md:text-base text-white group-hover:text-grey-900">
+        {title}
+      </div>
       {href && (
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-          >
+        <div className="w-4 h-4 md:w-6 md:h-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
             <path
               stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M7 17 17 7M7 7h10v10"
+              className="fill-none group-hover:stroke-grey-900"
             />
           </svg>
         </div>

@@ -1,1 +1,1 @@
-export * from "./Community";
+export * from "./Community/index";
