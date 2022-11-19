@@ -1,1 +1,1 @@
-export { default as Card } from "./Community";
+export { default as Community } from "./Community";
