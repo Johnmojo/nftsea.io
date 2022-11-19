@@ -18,7 +18,7 @@ const Carousel = () => {
   const onScroll = useCallback(() => {
     if (!embla) return;
     const progress = Math.max(0, Math.min(1, embla.scrollProgress()));
-    setScrollProgress(progress * 100);
+    setScrollProgress(progress * 80);
   }, [embla, setScrollProgress]);
 
   useEffect(() => {
@@ -59,7 +59,7 @@ const Carousel = () => {
             className={`relative max-w-[250px] overflow-hidden mx-auto h-2 bg-purple-100 rounded-full `}
           >
             <div
-              style={{ transform: `translateX(${scrollProgress}%)` }}
+              style={{ transform: `translateX(${scrollProgress + 20}%)` }}
               className="absolute bg-purple-500 w-full top-0 bottom-0 -left-full"
             ></div>
           </div>
