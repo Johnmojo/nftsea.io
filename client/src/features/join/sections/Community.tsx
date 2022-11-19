@@ -1,6 +1,6 @@
 import Button from "@/components/ui/buttons/Button";
 
-const Card = () => {
+const Community = () => {
   return (
     <section>
       <div className="w-full px-4 sm:px-8 xl:px-24 py-12">
@@ -27,4 +27,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Community;

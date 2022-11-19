@@ -1,1 +1,1 @@
-export * from "./Community/index";
+export * from "./sections/index";
