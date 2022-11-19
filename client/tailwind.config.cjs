@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         commissioner: ["commissioner", "sans-serif"],
       },
+      boxShadow: {
+        card: "0px 8px 24px rgba(133, 138, 181, 0.12)",
+      },
     },
     fontWeight: {
       regular: 400,
