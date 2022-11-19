@@ -10,7 +10,7 @@ const Button = ({ title, href }: Props) => {
         {title}
       </div>
       {href && (
-        <div className="w-4 h-4 md:w-6 md:h-6">
+        <div className="scale-75 md:scale-100">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
             <path
               stroke="#fff"
