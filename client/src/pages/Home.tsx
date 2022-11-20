@@ -1,7 +1,8 @@
 import Container from "../layouts/Container";
 import Meta from "../layouts/Meta";
-import { Community } from "@/features/join";
-import { Carousel } from "@/features/articles";
+import { RankingSection } from "@/features/rankings";
+import { ArticleSection } from "@/features/articles";
+import { JoinSection } from "@/features/join";
 
 const Home = () => {
   return (
@@ -11,8 +12,9 @@ const Home = () => {
         description="NFTSea.io is a platform  where you can sell, buy or share digital art. On NFTSea you can find, collect and trade your digital artwork."
       />
       <Container>
-        <Carousel />
-        <Community />
+        <RankingSection />
+        <ArticleSection />
+        <JoinSection />
       </Container>
     </>
   );

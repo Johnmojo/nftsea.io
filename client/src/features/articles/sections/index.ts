@@ -1,2 +1,2 @@
-export { default as Carousel } from "./Carousel";
+export { default as ArticleSection } from "./ArticleSection";
 export { default as Card } from "./Card";

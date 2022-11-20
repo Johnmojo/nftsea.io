@@ -5,9 +5,7 @@ import Info from "./Info";
 
 // TODO: Loop the cards from API
 
-const Carousel = () => {
-  //   const [emblaRef] = useEmblaCarousel();
-
+const ArticleSection = () => {
   const [emblaRef, embla] = useEmblaCarousel({
     dragFree: true,
     containScroll: "trimSnaps",
@@ -69,4 +67,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default ArticleSection;

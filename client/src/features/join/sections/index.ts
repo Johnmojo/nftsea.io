@@ -1,1 +1,1 @@
-export { default as Community } from "./Community";
+export { default as JoinSection } from "./JoinSection";

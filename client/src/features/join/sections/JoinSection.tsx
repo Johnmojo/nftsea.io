@@ -1,6 +1,6 @@
 import Button from "@/components/ui/buttons/Button";
 
-const Community = () => {
+const JoinSection = () => {
   return (
     <section>
       <div className="w-full px-4 sm:px-8 xl:px-24 py-12">
@@ -27,4 +27,4 @@ const Community = () => {
   );
 };
 
-export default Community;
+export default JoinSection;
