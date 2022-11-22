@@ -39,7 +39,7 @@ const RankingSection = () => {
   return (
     <section>
       <div className="w-full px-4 sm:px-8 xl:px-24 py-12">
-        <div className="flex px-12 bg-purple-100 rounded-3xl gap-x-[100px] relative mx-auto">
+        <div className="flex mx-auto justify-between px-12 gap-x-[100px] relative bg-purple-100 rounded-3xl max-w-screen-xl space-y-16">
           <div className="space-y-14 flex flex-col justify-center w-1/2">
             <div className="w-3/4">
               <p className="font-medium text-purple-900 text-base">
