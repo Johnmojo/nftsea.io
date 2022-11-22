@@ -5,7 +5,7 @@ interface Props {
 
 const Button = ({ title, href }: Props) => {
   return (
-    <button className="flex items-center w-full group hover:bg-purple-500 bg-grey-900 px-6 py-2 md:py-4 max-h-14 mx-auto justify-center rounded-full space-x-2">
+    <button className="flex items-center w-fit group hover:bg-purple-500 bg-grey-900 px-6 py-2 md:py-4 max-h-14 justify-center rounded-full space-x-2">
       <div className="font-medium text-xs md:text-base text-white group-hover:text-grey-900">
         {title}
       </div>

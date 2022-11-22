@@ -57,9 +57,7 @@ const RankingSection = () => {
                 </p>
               </div>
             </div>
-            <div className="w-fit">
-              <Button title="View Rankings" href="/" />
-            </div>
+            <Button title="View Rankings" href="/" />
           </div>
           <div className="w-1/2 flex">
             <div ref={emblaRef} className="overflow-y-hidden h-auto pt-12">
