@@ -14,7 +14,7 @@ const partnersArray: string[] = [
 
 const PartnerSection = () => {
   return (
-    <div className="w-full px-4 sm:px-8 xl:px-24 py-12 overflow-x-hidden">
+    <div className="w-full px-4 sm:px-8 xl:px-24 mt-[90px] mb-40 overflow-x-hidden">
       <div className="flex flex-col space-y-12 mx-auto justify-between max-w-screen-xl">
         <div className="grid grid-cols-5 w-full">
           {partnersArray.map((item, index) => (

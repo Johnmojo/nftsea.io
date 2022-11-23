@@ -27,8 +27,8 @@ const ArticleSection = () => {
 
   return (
     <section>
-      <div className="w-full px-4 sm:px-8 xl:px-24 py-12 overflow-x-hidden">
-        <div className="flex flex-col mx-auto justify-between max-w-screen-xl space-y-16">
+      <div className="w-full px-4 sm:px-8 xl:px-24 my-[160px] overflow-x-hidden">
+        <div className="flex flex-col mx-auto justify-between max-w-screen-xl space-y-8">
           <div>
             <h4 className="text-grey-500 font-semibold text-[31px]">
               Articles

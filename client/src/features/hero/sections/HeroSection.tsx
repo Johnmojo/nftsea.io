@@ -3,7 +3,7 @@ import ArrowHero from "@/components/ui/icons/ArrowHero";
 
 const HeroSection = () => {
   return (
-    <div className="w-full px-4 sm:px-8 xl:px-24 py-12 overflow-x-hidden">
+    <div className="w-full px-4 sm:px-8 xl:px-24 mt-12 mb-[90px] overflow-x-hidden">
       <div className="flex flex-col space-y-12 mx-auto justify-between max-w-screen-xl">
         <div className="flex rounded-3xl bg-purple-100 px-[105px] py-[80px]">
           <div className="space-y-8 w-2/5">
