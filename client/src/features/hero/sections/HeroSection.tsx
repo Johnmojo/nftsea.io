@@ -1,5 +1,6 @@
 import Button from "@/components/ui/buttons/Button";
 import ArrowHero from "@/components/ui/icons/ArrowHero";
+import ModelView from "./ModelView";
 
 const HeroSection = () => {
   return (
@@ -27,7 +28,9 @@ const HeroSection = () => {
             </div>
             <Button title="Explore Now" href="/" />
           </div>
-          <div className="w-auto"></div>
+          <div className="w-3/5">
+            <ModelView />
+          </div>
         </div>
       </div>
     </div>
