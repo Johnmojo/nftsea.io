@@ -14,7 +14,7 @@ const Card = ({ title, author, volume, floor }: Props) => {
         <img
           src="https://placekitten.com/g/400/400"
           alt="Card"
-          className="rounded-xl"
+          className="rounded-xl w-full h-auto"
         />
       </div>
       <div className="px-2 pb-3 space-y-2">

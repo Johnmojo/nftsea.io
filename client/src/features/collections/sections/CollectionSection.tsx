@@ -1,6 +1,8 @@
 import Button from "@/components/ui/buttons/Button";
 import PillButton from "@/components/ui/buttons/PillButton";
 import Card from "./Card";
+import useEmblaCarousel from "embla-carousel-react";
+import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 
 interface Props {
   categories: Array<string>;
@@ -9,20 +11,42 @@ interface Props {
 // TODO: Loop API for Card
 
 const CollectionSection = ({ categories }: Props) => {
+  const [emblaRef, embla] = useEmblaCarousel(
+    {
+      axis: "x",
+      align: "start",
+      dragFree: true,
+      loop: true,
+      // active: false,
+    },
+    []
+  );
+
   return (
     <div className="w-full px-4 sm:px-8 xl:px-24 mt-[160px] mb-[103px] overflow-x-hidden">
       <div className="flex flex-col space-y-12 mx-auto justify-between max-w-screen-xl">
-        <div className="flex items-center flex-col space-y-12">
-          <div className="flex justify-between w-full">
-            {categories.map((item, index) => (
-              <PillButton title={item} key={index} />
-            ))}
+        <div className="flex items-center space-y-12 flex-col">
+          <div className="justify-between w-full hidden md:block">
+            <div className="flex w-full space-x-4 place-content-between">
+              {categories.map((item, index) => (
+                <PillButton title={item} key={index} />
+              ))}
+            </div>
           </div>
           <h4 className="font-semibold text-[31px] text-grey-500">
             Hot Collections 🔥
           </h4>
+          <div className="block md:hidden mx-auto">
+            <div ref={emblaRef} className=" w-full">
+              <div className="flex space-x-4 overflow-hidden">
+                {categories.map((item, index) => (
+                  <PillButton title={item} key={index} />
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid lg:grid-cols-4 grid-cols-2 md:gap-5 sm:gap-4 gap-8">
           <Card title="Sun #1002" author="@tori28" volume="4.4" floor="0.4" />
           <Card title="Sun #1002" author="@tori28" volume="4.4" floor="0.4" />
           <Card title="Sun #1002" author="@tori28" volume="4.4" floor="0.4" />

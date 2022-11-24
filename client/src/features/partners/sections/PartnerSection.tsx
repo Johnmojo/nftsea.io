@@ -14,11 +14,16 @@ const partnersArray: string[] = [
 
 const PartnerSection = () => {
   return (
-    <div className="w-full px-4 sm:px-8 xl:px-24 mt-[90px] mb-40 overflow-x-hidden">
+    <div className="w-full px-4 sm:px-8 xl:px-24 mt-[90px] mb-40">
       <div className="flex flex-col space-y-12 mx-auto justify-between max-w-screen-xl">
-        <div className="grid grid-cols-5 w-full">
+        <div className="flex flex-wrap items-center justify-center">
           {partnersArray.map((item, index) => (
-            <img src={item} alt="partners" key={index} />
+            <div
+              key={index}
+              className="flex-grow-0 flex-shrink-0 p-2 basis-[calc(33.33%_-_8px)] sm:basis-[calc(20%)]"
+            >
+              <img src={item} alt="partners" />
+            </div>
           ))}
         </div>
       </div>
