@@ -19,3 +19,47 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@layer utilities {
+  .scrollbarVertical::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbarVertical::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 6px;
+    margin-block: 3rem;
+  }
+
+  .scrollbarVertical::-webkit-scrollbar-thumb {
+    background: #bcc3ff;
+    border-radius: 6px;
+  }
+
+  .scrollbarHorizontal::-webkit-scrollbar {
+    height: 8px;
+    overflow: hidden;
+  }
+
+  .scrollbarHorizontal::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 6px;
+  }
+
+  .scrollbarHorizontal::-webkit-scrollbar-thumb {
+    background: #bcc3ff;
+    border-radius: 6px;
+  }
+
+  .scrollbarHorizontal::-webkit-scrollbar-track-piece:start {
+    margin-left: 70vh;
+    background: #eaecff;
+    border-radius: 6px;
+  }
+
+  .scrollbarHorizontal::-webkit-scrollbar-track-piece:end {
+    margin-right: 70vh;
+    background: #eaecff;
+    border-radius: 6px;
+  }
+}
