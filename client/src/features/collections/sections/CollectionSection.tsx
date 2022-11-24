@@ -23,9 +23,9 @@ const CollectionSection = ({ categories }: Props) => {
   );
 
   return (
-    <div className="w-full px-4 sm:px-8 xl:px-24 mt-[160px] mb-[103px] overflow-x-hidden">
+    <div className="w-full px-4 sm:px-8 xl:px-24 overflow-x-hidden md:mt-[160px] md:mb-[104px] sm:my-[128px] my-[64px]">
       <div className="flex flex-col space-y-12 mx-auto justify-between max-w-screen-xl">
-        <div className="flex items-center space-y-12 flex-col">
+        <div className="flex items-center space-y-8 flex-col">
           <div className="justify-between w-full hidden md:block">
             <div className="flex w-full space-x-4 place-content-between">
               {categories.map((item, index) => (
@@ -33,7 +33,7 @@ const CollectionSection = ({ categories }: Props) => {
               ))}
             </div>
           </div>
-          <h4 className="font-semibold text-[31px] text-grey-500">
+          <h4 className="font-semibold md:text-[31px] text-[23px] text-grey-500">
             Hot Collections 🔥
           </h4>
           <div className="block md:hidden mx-auto">

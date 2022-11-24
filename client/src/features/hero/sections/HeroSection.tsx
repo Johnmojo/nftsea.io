@@ -4,7 +4,7 @@ import ModelView from "./ModelView";
 
 const HeroSection = () => {
   return (
-    <div className="w-full px-4 sm:px-8 xl:px-24 mt-12 mb-[90px]">
+    <div className="w-full px-4 sm:px-8 xl:px-24 md:mt-[48px] md:mb-[90px] sm:mt-[72px] sm:mb-[64px] mt-[72px] mb-[32px]">
       <div className="flex flex-col space-y-12 mx-auto justify-between max-w-screen-xl">
         <div className="flex rounded-3xl bg-purple-100 md:px-[105px] md:py-[80px] sm:p-[64px] p-6 flex-col md:flex-row gap-x-8 items-center">
           <div className="space-y-8 lg:w-2/5 w-full text-center lg:text-left flex flex-col md:items-start items-center">

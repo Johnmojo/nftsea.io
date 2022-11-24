@@ -10,7 +10,7 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className="pt-[72px]">{children}</main>
       <Footer />
     </>
   );

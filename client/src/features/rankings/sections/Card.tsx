@@ -11,7 +11,7 @@ interface Props {
 
 const Card = ({ title, author, volume, floor, verified }: Props) => {
   return (
-    <div className="relative min-w-[30%] min-h-[60%] p-2 rounded-xl space-y-3 shadow-card bg-white">
+    <div className="relative min-w-[90%] md:min-w-[30%] max-h-[500px] md:h-fit p-2 rounded-xl space-y-3 shadow-card bg-white">
       <div>
         <img
           src="https://placekitten.com/g/750/400"
@@ -29,13 +29,11 @@ const Card = ({ title, author, volume, floor, verified }: Props) => {
             />
           </div>
           <div>
-            <div className="font-medium text-grey-500 text-base flex items-center">
+            <div className="font-medium items-start text-grey-500 mb:text-base text-xs flex">
               {title}
-              <span className="pl-2">
-                <Badge />
-              </span>
+              <span className="md:pl-2 pl-1">{verified && <Badge />}</span>
             </div>
-            <div className="font-regular text-grey-300 text-[13px]">
+            <div className="font-regular text-grey-300 md:text-[13px] text-[10px]">
               By {author}
             </div>
           </div>
@@ -43,19 +41,19 @@ const Card = ({ title, author, volume, floor, verified }: Props) => {
         <div className="flex flex-row justify-between items-center">
           <div className="flex space-x-3 justify-between items-center">
             <div>
-              <div className="text-grey-300 text-base font-regular text-[10px]">
+              <div className="text-grey-300 font-regular md:text-[10px] text-[8px]">
                 Volume
               </div>
-              <div className="text-grey-500 text-base font-medium text-[13px]">
+              <div className="text-grey-500 font-medium md:text-[13px] text-[10px]">
                 {volume} ETH
               </div>
             </div>
             <div className="rounded-full w-[0.25px] h-4 bg-grey-100"></div>
             <div>
-              <div className="text-grey-300 text-base font-regular text-[10px]">
+              <div className="text-grey-300 font-regular md:text-[10px] text-[8px]">
                 Floor
               </div>
-              <div className="text-grey-500 text-base font-medium text-[13px]">
+              <div className="text-grey-500 font-medium md:text-[13px] text-[10px]">
                 {floor} ETH
               </div>
             </div>

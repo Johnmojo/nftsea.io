@@ -6,12 +6,14 @@ import Info from "./Info";
 const ArticleSection = () => {
   return (
     <section>
-      <div className="w-full px-4 sm:px-8 xl:px-24 mt-[160px] mb-8">
+      <div className="w-full px-4 sm:px-8 xl:px-24 py-8 md:mt-[160px] sm:mt-[128px] mt-[64px]">
         <div className="flex flex-col mx-auto justify-between max-w-screen-xl space-y-8">
-          <h4 className="text-grey-500 font-semibold text-[31px]">Articles</h4>
+          <h4 className="text-grey-500 font-semibold md:text-[31px] text-[23px]">
+            Articles
+          </h4>
         </div>
       </div>
-      <div className="w-full px-4 sm:px-8 xl:px-24 mb-[160px] overflow-x-scroll scrollbarHorizontal">
+      <div className="w-full px-4 sm:px-8 xl:px-24 md:mb-[160px] sm:mb-[128px] mb-[64px] overflow-x-scroll scrollbarHorizontalMobile sm:scrollbarHorizontalTablet md:scrollbarHorizontalLaptop xl:scrollbarHorizontal">
         <div className="flex flex-col mx-auto justify-between max-w-screen-xl space-y-8">
           <div className="flex space-x-5 pb-12">
             <Card

@@ -42,8 +42,10 @@ a {
   }
 
   .scrollbarHorizontal::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: #eaecff;
     border-radius: 6px;
+    margin-block: 40rem;
+    writing-mode: vertical-rl;
   }
 
   .scrollbarHorizontal::-webkit-scrollbar-thumb {
@@ -51,15 +53,82 @@ a {
     border-radius: 6px;
   }
 
-  .scrollbarHorizontal::-webkit-scrollbar-track-piece:start {
-    margin-left: 70vh;
-    background: #eaecff;
-    border-radius: 6px;
+  .scrollbarHorizontalLaptop::-webkit-scrollbar {
+    height: 8px;
+    border-radius: 1rem;
   }
 
-  .scrollbarHorizontal::-webkit-scrollbar-track-piece:end {
-    margin-right: 70vh;
+  .scrollbarHorizontalLaptop::-webkit-scrollbar-track {
     background: #eaecff;
-    border-radius: 6px;
+    margin-block: 2rem;
+    writing-mode: vertical-rl;
   }
+
+  .scrollbarHorizontalLaptop::-webkit-scrollbar-thumb {
+    background: #bcc3ff;
+    border-radius: 1rem;
+  }
+
+  .scrollbarHorizontalTablet::-webkit-scrollbar {
+    height: 8px;
+    border-radius: 1rem;
+  }
+
+  .scrollbarHorizontalTablet::-webkit-scrollbar-track {
+    background: #eaecff;
+    margin-block: 2rem;
+    writing-mode: vertical-rl;
+  }
+
+  .scrollbarHorizontalTablet::-webkit-scrollbar-thumb {
+    background: #bcc3ff;
+    border-radius: 1rem;
+  }
+
+  .scrollbarHorizontalTabletWhite::-webkit-scrollbar {
+    height: 8px;
+    border-radius: 1rem;
+  }
+
+  .scrollbarHorizontalTabletWhite::-webkit-scrollbar-track {
+    background: #ffffff;
+    margin-block: 4rem;
+    writing-mode: vertical-rl;
+  }
+
+  .scrollbarHorizontalTabletWhite::-webkit-scrollbar-thumb {
+    background: #bcc3ff;
+    border-radius: 1rem;
+  }
+
+  .scrollbarHorizontalMobile::-webkit-scrollbar {
+    height: 8px;
+    border-radius: 1rem;
+  }
+
+  .scrollbarHorizontalMobile::-webkit-scrollbar-track {
+    background: #eaecff;
+    margin-block: 1rem;
+    writing-mode: vertical-rl;
+  }
+
+  .scrollbarHorizontalMobile::-webkit-scrollbar-thumb {
+    background: #bcc3ff;
+    border-radius: 1rem;
+  }
+}
+
+.scrollbarHorizontalMobileWhite::-webkit-scrollbar {
+  height: 8px;
+  border-radius: 1rem;
+}
+
+.scrollbarHorizontalMobileWhite::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 1rem;
+}
+
+.scrollbarHorizontalMobileWhite::-webkit-scrollbar-thumb {
+  background: #bcc3ff;
+  border-radius: 1rem;
 }

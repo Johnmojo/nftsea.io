@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="z-50 hidden w-full px-8 xl:px-24 pt-8 pb-8 transition-all duration-300 ease-out md:block">
+      <div className="z-50 hidden w-full px-8 xl:px-24 py-6 transition-all duration-300 ease-out md:block fixed bg-white top-0">
         <div className="flex items-center justify-between mx-auto max-w-screen-xl">
           <Link to="/">
             <div
@@ -57,7 +57,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
-      <div className="z-50 block w-full px-4 sm:px-8 pt-8 pb-8 transition-all duration-300 ease-out md:hidden ">
+      <div className="z-50 block w-full px-4 sm:px-8 pt-8 pb-8 transition-all duration-300 ease-out md:hidden fixed bg-white top-0">
         <div className="flex items-center justify-between mx-auto max-w-screen-3xl">
           <div className="z-50 flex cursor-pointer">
             <Link to="/">
