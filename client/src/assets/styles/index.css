@@ -29,6 +29,8 @@ a {
     background: #ffffff;
     border-radius: 6px;
     margin-block: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .scrollbarVertical::-webkit-scrollbar-thumb {
