@@ -41,7 +41,7 @@ const CollectionSection = ({ categories }: Props) => {
           <div className="justify-between w-full hidden md:block">
             <div className="flex w-full space-x-4 place-content-between">
               {categories.map((item, index) => (
-                <PillButton title={item} key={index} active />
+                <PillButton title={item} key={index} />
               ))}
             </div>
           </div>
