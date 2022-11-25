@@ -37,7 +37,13 @@ Clone repository
 git clone https://github.com/Johnmojo/nftsea.io.git
 ```
 
-Create an .env file in the root of the monorepo
+CD into the repo first
+
+```sh
+cd nftsea.io
+```
+
+Create a .env file in the root of the monorepo
 
 ```env
 NFTSEA_SERVER_PORT=4000
@@ -45,12 +51,11 @@ NFTSEA_CLIENT_PORT=3000
 NFTSEA_CLIENT_URL=http://localhost
 ```
 
-Navigate into the cloned directory and start it up
+Install and start
 
 ```sh
-cd nftsea.io
 npm install
-npm run dev
+npm run start
 ```
 
 # Endpoints
