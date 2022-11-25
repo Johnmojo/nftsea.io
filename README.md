@@ -25,6 +25,8 @@ A monorepo site built with React + Express
 - `data/` - Data of JSONs.
 - `src/*` - Link to each seperate controllers & routes.
 
+# Outline
+
 ![Outline](https://github.com/Johnmojo/nftsea.io/blob/main/.github/images/outline.png)
 
 # 🚀 Quick start
