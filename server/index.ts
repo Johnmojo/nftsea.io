@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
+import contentRouter from "./src/routes/content.routes";
 
 // Env
 dotenv.config({ path: "../.env" });
@@ -19,9 +20,7 @@ app.use(
 );
 
 // Route Index
-app.get("/", (req, res) => {
-  res.status(200).json({ message: "Hello World" });
-});
+app.use("/", contentRouter);
 
 // Port
 app.listen(port, () => {

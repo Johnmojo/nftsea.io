@@ -3,9 +3,13 @@ name: nftsea
 
 services:
   server:
-    build: ./server
+    build:
+      context: ./server
+      dockerfile: ./Dockerfile
     container_name: nftsea-server
     restart: always
+    volumes:
+      - './server/src:/server/src'
     env_file:
       - .env
     ports:
