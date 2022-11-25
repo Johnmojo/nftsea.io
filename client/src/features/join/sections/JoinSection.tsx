@@ -10,7 +10,7 @@ const JoinSection = () => {
               <h4 className="text-grey-500 font-semibold text-[23px] md:text-[31px] flex items-center">
                 Join Our Community
               </h4>
-              <p className="text-grey-500 font-regular text-xs md:text-base">
+              <p className="text-grey-500 font-regular text-xs md:text-base leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.
                 Class aptent taciti sociosqu ad litora torquent per conubia

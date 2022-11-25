@@ -6,8 +6,8 @@ const HeroSection = () => {
   return (
     <div className="w-full px-4 sm:px-8 xl:px-24 md:mt-[48px] md:mb-[90px] sm:mt-[72px] sm:mb-[64px] mt-[72px] mb-[32px]">
       <div className="flex flex-col space-y-12 mx-auto justify-between max-w-screen-xl">
-        <div className="flex rounded-3xl bg-purple-100 md:px-[105px] md:py-[80px] sm:p-[64px] p-6 flex-col md:flex-row gap-x-8 items-center">
-          <div className="space-y-8 lg:w-2/5 w-full text-center lg:text-left flex flex-col md:items-start items-center">
+        <div className="flex rounded-3xl bg-purple-100 md:px-[105px] md:py-[80px] min-[612px]:p-[64px] p-6 flex-col lg:flex-row gap-x-8 items-center">
+          <div className="space-y-8 lg:w-2/5 w-full text-center lg:text-left flex flex-col lg:items-start items-center">
             <div>
               <span className="text-purple-900 font-medium text-base">
                 1,000,000+ NFTs
@@ -16,19 +16,19 @@ const HeroSection = () => {
                 <h1 className="font-semibold xl:text-[61px] lg:text-[49px] text-[29px]">
                   Decentralized Marketplace for Digital Artwork
                 </h1>
-                <p className="font-regular text-base">
+                <p className="font-regular text-base leading-relaxed">
                   NFTSea.io is a platform where you can sell, buy or share
                   digital art. On NFTSea you can find, collect and trade your
                   digital artwork.
                 </p>
-                <div className="hidden md:block z-50 absolute top-[60%] -right-[10%]">
+                <div className="hidden lg:block z-50 absolute top-[60%] -right-[10%]">
                   <ArrowHero />
                 </div>
               </div>
             </div>
             <Button title="Explore Now" href="/" />
           </div>
-          <div className="w-full md:w-1/3 lg:w-3/5 h-[500px]">
+          <div className="w-full lg:w-3/5 min-[512px]:h-[400px] h-[300px]">
             <ModelView />
           </div>
         </div>

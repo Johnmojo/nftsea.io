@@ -1,5 +1,5 @@
 interface Props {
-  customClass: string;
+  customClass?: string;
 }
 
 const ArrowLink = ({ customClass }: Props) => {

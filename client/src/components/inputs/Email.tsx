@@ -7,7 +7,7 @@ const Email = () => {
         type="email"
         name="email"
         placeholder="Email Address"
-        className="bg-grey-50 pl-6 py-4 rounded-full placeholder:text-grey-300 placeholder:font-medium placeholder:text-base outline-none w-full"
+        className="bg-grey-50 md:pl-6 pl-4 md:py-4 py-2 rounded-full placeholder:text-grey-300 placeholder:font-medium placeholder:md:text-base placeholder:text-xs outline-none w-full"
       />
       <button
         type="submit"

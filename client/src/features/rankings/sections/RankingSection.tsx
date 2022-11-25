@@ -35,7 +35,7 @@ const RankingSection = () => {
                 <h3 className="text-grey-500 font-semibold md:text-[39px] text-[23px]">
                   Meet the World Top-Tier Creators
                 </h3>
-                <p className="text-grey-500 font-regular md:text-base text-xs">
+                <p className="text-grey-500 font-regular md:text-base text-xs leading-relaxed">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   vulputate libero et velit interdum, ac aliquet odio mattis.
                   Class aptent taciti sociosqu ad litora torquent per conubia

@@ -8,7 +8,7 @@ const ModelView = () => {
       <ambientLight />
       <pointLight position={[5, 5, 5]} intensity={5} color="#C9CFFF" />
       <pointLight position={[-3, -3, 2]} intensity={15} color="#C9CFFF" />
-      <OrbitControls autoRotate maxDistance={4} minDistance={2.5} />
+      <OrbitControls autoRotate maxDistance={3} minDistance={2.5} />
       <Blob />
     </Canvas>
   );
