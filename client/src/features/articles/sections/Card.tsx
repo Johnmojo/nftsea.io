@@ -1,3 +1,5 @@
+import placeholder_main from "@/assets/images/placeholder_main.png";
+
 interface Props {
   title: string;
   date: string;
@@ -8,9 +10,9 @@ const Card = ({ title, date }: Props) => {
     <div className="relative min-w-[80%] md:min-w-[30%] p-2 rounded-xl space-y-3 shadow-card">
       <div>
         <img
-          src="https://placekitten.com/g/750/400"
+          src={placeholder_main}
           alt="Card"
-          className="rounded-xl"
+          className="rounded-xl h-auto w-full"
         />
       </div>
       <div className="px-2 pb-3 space-y-2">

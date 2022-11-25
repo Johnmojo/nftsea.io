@@ -1,9 +1,27 @@
+import useFetch from "@/hooks/useFetch";
 import Button from "@/components/ui/buttons/Button";
 import Card from "./Card";
 
-// TODO: Loop the cards from API
+interface rankingProps {
+  title: string;
+  author: string;
+  volume: number;
+  floor: number;
+  verified: boolean;
+}
 
 const RankingSection = () => {
+  // Initialize API link
+  const api_URL =
+    import.meta.env.NFTSEA_APP_URL +
+    ":" +
+    import.meta.env.NFTSEA_SERVER_PORT +
+    "/" +
+    "rankings";
+
+  // Initialize useFetch hook
+  const { data } = useFetch(api_URL);
+
   return (
     <section>
       <div className="w-full px-4 sm:px-8 xl:px-24 md:mt-[104px] md:mb-[160px] sm:my-[128px] my-[64px]">
@@ -27,51 +45,19 @@ const RankingSection = () => {
             </div>
             <Button title="View Rankings" href="/" />
           </div>
-          <div className="flex w-full md:w-1/2">
+          <div className="flex justify-end w-full md:w-1/2">
             <div className="md:overflow-auto overflow-x-scroll h-auto md:scrollbarVertical sm:scrollbarHorizontalTabletWhite scrollbarHorizontalMobileWhite">
-              <div className="flex md:flex-col flex-row md:space-y-12 md:space-x-0 sm:space-x-8 space-x-5 select-none md:h-[600px] h-fit pr-[10%] sm:pb-16 pb-12">
-                <Card
-                  title="HUGO x Imaginary Ones"
-                  author="HUGOxImaginaryOnes"
-                  volume="4.4"
-                  floor="0.4"
-                  verified={true}
-                />
-                <Card
-                  title="Collection Name"
-                  author="Creator Name"
-                  volume="4.4"
-                  floor="0.4"
-                  verified={true}
-                />
-                <Card
-                  title="Collection Name"
-                  author="Creator Name"
-                  volume="4.4"
-                  floor="0.4"
-                  verified={true}
-                />
-                <Card
-                  title="Collection Name"
-                  author="Creator Name"
-                  volume="4.4"
-                  floor="0.4"
-                  verified={true}
-                />
-                <Card
-                  title="Collection Name"
-                  author="Creator Name"
-                  volume="4.4"
-                  floor="0.4"
-                  verified={true}
-                />
-                <Card
-                  title="Collection Name"
-                  author="Creator Name"
-                  volume="4.4"
-                  floor="0.4"
-                  verified={true}
-                />
+              <div className="flex md:flex-col flex-row md:space-y-12 md:space-x-0 sm:space-x-8 space-x-5 select-none md:h-[600px] h-fit pr-[20%] sm:pb-16 pb-12">
+                {data.map((ranking: rankingProps, index: number) => (
+                  <Card
+                    key={index}
+                    title={ranking.title}
+                    author={ranking.author}
+                    volume={ranking.volume}
+                    floor={ranking.floor}
+                    verified={ranking.verified}
+                  />
+                ))}
               </div>
             </div>
           </div>

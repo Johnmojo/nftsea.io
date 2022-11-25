@@ -1,10 +1,12 @@
+// Imported local images for the sake of example
+import placeholder_collection from "@/assets/images/placeholder_collection.png";
 import Ethereum from "@/components/ui/icons/Ethereum";
 
 interface Props {
   title: string;
   author: string;
-  volume: string;
-  floor: string;
+  volume: number;
+  floor: number;
 }
 
 const Card = ({ title, author, volume, floor }: Props) => {
@@ -12,7 +14,7 @@ const Card = ({ title, author, volume, floor }: Props) => {
     <div className="relative p-2 rounded-xl space-y-3 shadow-card bg-white">
       <div>
         <img
-          src="https://placekitten.com/g/400/400"
+          src={placeholder_collection}
           alt="Card"
           className="rounded-xl w-full h-auto"
         />

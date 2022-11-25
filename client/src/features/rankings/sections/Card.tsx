@@ -1,11 +1,14 @@
+// Imported local images for the sake of example
+import placeholder_main from "@/assets/images/placeholder_main.png";
+import rankings_profile from "@/assets/images/rankings_profile.png";
 import Badge from "@/components/ui/icons/Badge";
 import Ethereum from "@/components/ui/icons/Ethereum";
 
 interface Props {
   title: string;
   author: string;
-  volume: string;
-  floor: string;
+  volume: number;
+  floor: number;
   verified: boolean;
 }
 
@@ -14,18 +17,18 @@ const Card = ({ title, author, volume, floor, verified }: Props) => {
     <div className="relative min-w-[90%] md:min-w-[30%] max-h-[500px] md:h-fit p-2 rounded-xl space-y-3 shadow-card bg-white">
       <div>
         <img
-          src="https://placekitten.com/g/750/400"
+          src={placeholder_main}
           alt="Card"
-          className="rounded-xl"
+          className="rounded-xl w-auto h-full max-h-[300px]"
         />
       </div>
       <div className="px-2 pb-3 space-y-2">
         <div className="flex gap-4 items-center">
           <div>
             <img
-              src="https://placekitten.com/g/56/56"
+              src={rankings_profile}
               alt="Card"
-              className="rounded-xl"
+              className="rounded-xl w-auto h-full max-h-[50px]"
             />
           </div>
           <div>

@@ -1,26 +1,38 @@
+import useEmblaCarousel from "embla-carousel-react";
+import useFetch from "@/hooks/useFetch";
 import Button from "@/components/ui/buttons/Button";
 import PillButton from "@/components/ui/buttons/PillButton";
 import Card from "./Card";
-import useEmblaCarousel from "embla-carousel-react";
-import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 
 interface Props {
   categories: Array<string>;
 }
 
-// TODO: Loop API for Card
+interface collectionProps {
+  title: string;
+  author: string;
+  volume: number;
+  floor: number;
+}
 
 const CollectionSection = ({ categories }: Props) => {
-  const [emblaRef, embla] = useEmblaCarousel(
-    {
-      axis: "x",
-      align: "start",
-      dragFree: true,
-      loop: true,
-      // active: false,
-    },
-    []
-  );
+  // Initialize API link
+  const api_URL =
+    import.meta.env.NFTSEA_APP_URL +
+    ":" +
+    import.meta.env.NFTSEA_SERVER_PORT +
+    "/" +
+    "collections";
+
+  // Initialize useFetch hook
+  const { data } = useFetch(api_URL);
+
+  const [emblaRef] = useEmblaCarousel({
+    axis: "x",
+    align: "start",
+    dragFree: true,
+    loop: true,
+  });
 
   return (
     <div className="w-full px-4 sm:px-8 xl:px-24 overflow-x-hidden md:mt-[160px] md:mb-[104px] sm:my-[128px] my-[64px]">
@@ -46,15 +58,16 @@ const CollectionSection = ({ categories }: Props) => {
             </div>
           </div>
         </div>
-        <div className="grid lg:grid-cols-4 grid-cols-2 md:gap-5 sm:gap-4 gap-8">
-          <Card title="Sun #1002" author="@tori28" volume="4.4" floor="0.4" />
-          <Card title="Sun #1002" author="@tori28" volume="4.4" floor="0.4" />
-          <Card title="Sun #1002" author="@tori28" volume="4.4" floor="0.4" />
-          <Card title="Sun #1002" author="@tori28" volume="4.4" floor="0.4" />
-          <Card title="Sun #1002" author="@tori28" volume="4.4" floor="0.4" />
-          <Card title="Sun #1002" author="@tori28" volume="4.4" floor="0.4" />
-          <Card title="Sun #1002" author="@tori28" volume="4.4" floor="0.4" />
-          <Card title="Sun #1002" author="@tori28" volume="4.4" floor="0.4" />
+        <div className="grid lg:grid-cols-4 grid-cols-2 md:gap-5 sm:gap-4 gap-4">
+          {data?.map((collection: collectionProps, index: number) => (
+            <Card
+              key={index}
+              title={collection.title}
+              author={collection.author}
+              volume={collection.volume}
+              floor={collection.floor}
+            />
+          ))}
         </div>
         <div className="mx-auto">
           <Button href="/" title="View More" />
