@@ -14,7 +14,8 @@ const port = process.env.NFTSEA_SERVER_PORT || 5000;
 // CORS middleware
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin:
+      process.env.NFTSEA_CLIENT_URL + ":" + process.env.NFTSEA_CLIENT_PORT,
     credentials: true,
   })
 );

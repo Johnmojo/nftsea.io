@@ -13,7 +13,7 @@ interface rankingProps {
 const RankingSection = () => {
   // Initialize API link
   const api_URL =
-    import.meta.env.NFTSEA_APP_URL +
+    import.meta.env.NFTSEA_CLIENT_URL +
     ":" +
     import.meta.env.NFTSEA_SERVER_PORT +
     "/" +

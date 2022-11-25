@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Email from "../components/inputs/Email";
 import ArrowChevron from "../components/ui/icons/ArrowChevron";
 
@@ -28,22 +29,44 @@ const Footer = () => {
                   MarketPlace
                 </h1>
                 <ul className="text-grey-300 font-medium text-base space-y-3">
-                  <li>Explore</li>
-                  <li>Collectibles</li>
-                  <li>Top NFTs</li>
-                  <li>Ranking</li>
-                  <li>Whitelists</li>
-                  <li>Airdrops</li>
+                  <li>
+                    <Link to="/">Explore</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Collectibles</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Top NFTs</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Ranking</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Whitelists</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Airdrops</Link>
+                  </li>
                 </ul>
               </div>
               <div className="space-y-6 md:pr-0 lg:pr-16">
                 <h1 className="font-semibold text-2xl text-grey-500">Links</h1>
                 <ul className="text-grey-300 font-medium text-base space-y-3">
-                  <li>Career</li>
-                  <li>Protocols</li>
-                  <li>About Us</li>
-                  <li>Contact Us</li>
-                  <li>Help Center</li>
+                  <li>
+                    <Link to="/">Career</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Protocols</Link>
+                  </li>
+                  <li>
+                    <Link to="/">About Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Contact Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/"> Help Center</Link>
+                  </li>
                 </ul>
               </div>
               <div className="space-y-6 md:pr-0 lg:pr-16">
@@ -51,9 +74,15 @@ const Footer = () => {
                   Join Us
                 </h1>
                 <ul className="text-grey-300 font-medium text-base space-y-3">
-                  <li>Discord</li>
-                  <li>Twitter</li>
-                  <li>Instagram Us</li>
+                  <li>
+                    <Link to="/"> Discord</Link>
+                  </li>
+                  <li>
+                    <Link to="/"> Twitter</Link>
+                  </li>
+                  <li>
+                    <Link to="/"> Instagram Us</Link>
+                  </li>
                 </ul>
               </div>
             </div>
