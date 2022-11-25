@@ -57,7 +57,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
-      <div className="z-50 block w-full px-4 sm:px-8 pt-8 pb-8 transition-all duration-300 ease-out md:hidden fixed bg-white top-0">
+      <div className="z-50 block w-full px-4 sm:px-8 py-6 transition-all duration-300 ease-out md:hidden fixed bg-white top-0">
         <div className="flex items-center justify-between mx-auto max-w-screen-3xl">
           <div className="z-50 flex cursor-pointer">
             <Link to="/">
@@ -75,7 +75,7 @@ const Header = () => {
               aria-haspopup="menu"
               aria-expanded={menu ? "true" : "false"}
               title={menu ? "Close main menu" : "Open main menu"}
-              className="flex flex-col items-center justify-center w-14 h-14 space-y-1 bg-grey-900 rounded-full hover:bg-purple-500"
+              className="flex flex-col items-center justify-center w-10 h-10 space-y-1 bg-grey-900 rounded-full hover:bg-purple-500"
               onClick={() => setMenu(!menu)}
             >
               <span
