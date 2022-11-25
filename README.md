@@ -41,7 +41,8 @@ Create an .env file in the root of the monorepo
 
 ```env
 NFTSEA_SERVER_PORT=4000
-NFTSEA_CLIENT_PORT=http://localhost
+NFTSEA_CLIENT_PORT=3000
+NFTSEA_CLIENT_URL=http://localhost
 ```
 
 Navigate into the cloned directory and start it up
